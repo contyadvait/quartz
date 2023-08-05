@@ -37,3 +37,11 @@ jobs:
           publish_dir: ./public
           publish_branch: master  # deploying branch
           cname: quartz.jzhao.xyz
+
+      - name: Deploy  
+          uses: contyadvait/advaitthepro@outlook.com
+          with:  
+	          github_token: ${{ secrets.GITHUB_TOKEN }} # this can stay as is, GitHub fills this in for us!
+          	publish_dir: ./public  
+	          publish_branch: master
+	          cname: https://contyadvait.github.io/quartz/
